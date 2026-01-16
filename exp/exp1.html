@@ -4,26 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiment 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rye&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="/styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Experiment 1</h1>
-    <h2>To open console: Command + Option + J </h2>
+    <header>
+        <h1>Experiment 1</h1>
+        <h2>To open console: Command + Option + J </h2>
+    </header>
+
+    <img src="/images/zee.png" alt="doodle of zatanna" width="300" length="377">
 
     <script>
-        var magic = prompt('Do you like magic?'); 
-        
-        if(magic === 'no') {
+
+/*this program takes the quote "this is a magic spell" and reverses the letters while keeping the word order the same. First, it asks if you like magic, if no then it will be sad. If yes, then it asks you to type out the quote. If done correctly, then it separates each word into an array. Then, each word is split into an array of letters which is puit through a loop that starts with the last letter and goes backwards through the array of letters to reverse them. That loop is nested in a loop that continues until there are no more words.*/
+
+        var magic = prompt('Do you like magic?'); //this is the start of the sequence
+        var reverse = '';
+
+        if(magic === 'no') { //this is a selection
             console.log('awe, ok :(');
         } 
 
-        if(magic === 'yes') {
-            var spell = prompt('type this is a spell');
-        } if(spell === 'this is a spell'){
-            newspell = spell.replace('this is a spell', 'siht si a lleps') 
-        } if(spell !== 'this is a spell'){
-            console.log('wrong!');
-        }
+        if(magic === 'yes'){
+            var spell = prompt('Type "this is a magic spell"');
+        } if(spell === 'this is a magic spell'){
+            var newspell = spell.split(' ');
+
+            for(var j = 0; j < newspell.length; j++){ //this is a loop
+                var word0 = newspell[j].split('');
+
+                for(var i = word0.length - 1; i >= 0; i--){
+                    reverse += word0[i];
+                } reverse += ' ';
+            }
+
+            console.log(reverse);
+        } 
+
+        //console.log(newspell);
+        // console.log(word0[0]);
+        // console.log(word0[1]);
+        // console.log(word0[2]);
+        // console.log(word0[3]);
+        // if(magic === 'yes') {
+        //     var spell = prompt('type this is a spell');
+        // } if(spell === 'this is a spell'){
+        //     newspell = spell.replace('this is a spell', 'siht si a lleps') 
+        // } if(spell !== 'this is a spell'){
+        //     console.log('wrong!');
+        // }
 
     </script>
     
