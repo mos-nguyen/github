@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(188, 162, 121);
+    background-image: url(images/Repeating_Newsprint_Pattern.png);
+    background-size: 160px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 200px;
+    width: 800px;
+    align-items: center;
+    border: solid;
+    border-width: 5px;
+    border-radius: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: rgb(25, 117, 255);
+    text-shadow: -7px 5px 0 #000;
+    /* background-color: #000; */
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-family: "Actor", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 242, 232);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.497);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: solid;
+    border-width: 5px;
+}
+
+h3 {
+    margin: 10px 0px 10px 10px;
+    font-family: "Actor", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+article {
+    /* background-color: rgb(255, 255, 255); */
+    margin: 30px 20px 30px 20px;
+    width: 250px;
+    height: 400px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.ml {
+    height: 83px;
+}
+
+.pic {
+    height: 65px;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    height: 115px;
+    font-family: "Montserrat", sans-serif;
+}
+
+div {
+    margin: auto;
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 30px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
