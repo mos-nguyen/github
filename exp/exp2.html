@@ -11,8 +11,44 @@
         <h1>Experiment 2</h1>
     </header>
 
+    <img class = "base" src="images/base.png" alt="character base with no clothes"> 
+    <img class = "cottage" src="images/cottage.png" alt="character base dressed in a cottage core dress">
+    <img class = "goth" src="images/goth.png" alt="character base dressed as a goth style">
+    <img class = "royal" src="images/royal.png" alt="character base dressed as a royal princess">
+    <img class = "western" src="images/western.png" alt="character base dressed as a cow boy">
+
     <script>
-        var fashion = prompt('Whats your favorite fashion style? Please choose from this list. (Western, Cottage Core, Goth, Fantasy)');
+
+// This program asks you what your favorite fashion style is, allowing you to choose from a list. If nothing from the list in chosen, there is a character on the screen with no fashion style and is sad. If one of the given styles is chosen, the other images "disappear" by going to 0px and the chosen style is visible to show the character has dressed up in that style. 
+
+        var fashion = prompt('Whats your favorite fashion style? Please choose from this list. (Western, Cottage Core, Goth, royal)');
+        var style = ["western", "cottage core", "goth", "royal"]
+        
+        document.querySelector('.cottage').style.width = "0px"
+        document.querySelector('.goth').style.width = "0px"
+        document.querySelector('.royal').style.width = "0px"
+        document.querySelector('.western').style.width = "0px"
+
+        if(fashion === "cottage core"){
+            document.querySelector('.cottage').style.width = "391px"
+            document.querySelector('.base').style.width = "0px"
+        }
+
+        if(fashion === "goth"){
+            document.querySelector('.goth').style.width = "391px"
+            document.querySelector('.base').style.width = "0px"
+        }
+
+        if(fashion === "royal"){
+            document.querySelector('.royal').style.width = "391px"
+            document.querySelector('.base').style.width = "0px"
+        }
+
+        if(fashion === "western"){
+            document.querySelector('.western').style.width = "391px"
+            document.querySelector('.base').style.width = "0px"
+        }
+
     </script>
     
 </body>
