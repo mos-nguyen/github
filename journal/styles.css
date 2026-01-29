@@ -25,6 +25,14 @@ a {
     color: #EADADA;
 }
 
+.weblink {
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+}
+
 h1 {
     color: #EADADA;
     font-family: "Fredericka the Great", serif;
