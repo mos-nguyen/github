@@ -99,7 +99,7 @@ form label {
     width: 300px;
 }
 
-#next {
+#next, #begin, #pgnext, #finalpg, #return {
     border-radius: 2px;
     background: #D4F7FF;
     box-shadow: 0 0 11.3px 4px rgba(212, 247, 255, 0.35);
@@ -162,11 +162,11 @@ div {
 }
 
 
-#welcome-1 { background-color: black; }
+#welcome-1 { background-color: black; z-index: 1;}
 #choose-2 { background-color: black; }
 #type-3 { background-color: black; }
 #type-4 { background-color: black; }
-#story-5 { background-color: black; z-index: 1;}
+#story-5 { background-color: black; }
 
 /* #welcome-1 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); z-index: 1;}
 #choose-2 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); }
