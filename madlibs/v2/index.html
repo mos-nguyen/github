@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MadLibs V1</title>
+    <title>MadLibs V2</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"> 
 
@@ -11,72 +11,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
-    <!-- font-family: "Jersey 10", sans-serif;
-         font-weight: 400;
-         font-style: normal; -->
+    <!-- font-family: "Jersey 10", sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
-    <!-- font-family: "Micro 5", sans-serif;
-         font-weight: 400;
-         font-style: normal; -->
+    <!-- font-family: "Micro 5", sans-serif;-->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
-    
     <link href="styles.css" rel="stylesheet"> 
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <aside>
-        <nav>
-            <ul>
-                <li>
-                    <p><a href="../../index.html">Return to <br>
-                         Portal</a></p>
-                </li>
-                <li>
-                    <p>DES157A: Interactive Media</p>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+    <ul>
+        <li>
+            <p><a href="../../index.html">Return to <br>
+                    Portal</a></p>
+        </li>
+        <li>
+            <p>DES157A: Interactive Media</p>
+        </li>
+    </ul>
+
 
     <main>
-        <section id="welcome-1">
-            <article>
-                <h1>WELCOME</h1>
 
-                <a href="#" id="begin">Click to Begin</a>
-            </article>
+        <section id="welcome-1" class="showing welcome-1">
+            <header>
+                <h1>WELCOME</h1>
+            </header>
+
+            <button id="begin">Click to Begin</button>
         </section>
 
-        <section id="choose-2">
-            <article>
+        <section id="choose-2" class="hidden">
+            <header>
                 <h1>PLEASE CHOOSE CAREFULLY</h1>
+            </header>
 
                 <form>
-                    <label for="location">Location</label>
+                    <label for="nouns">Choose a Noun</label>
+                    <select id="nouns">
+                        <option value="curse">Curse</option>
+                        <option value="affliction">Affliction</option>
+                        <option value="hex">Hex</option>
+                        <option value="misfortune">Misfortune</option>
+                    </select>
+
+                    <label for="adj">Choose an Adjective</label>
+                    <select id="adj">
+                        <option value="spooky">Spooky</option>
+                        <option value="haunted">Haunted</option>
+                        <option value="catastrophic">Catastrophic</option>
+                        <option value="terrifying">Terrifying</option>
+                    </select>
+
+                    <label for="location">Choose a Location</label>
                     <select id="location">
                         <option value="mansion">Mansion</option>
                         <option value="forest">Forest</option>
                         <option value="cabin">Cabin</option>
                     </select>
-
-                    <label for="animal">Animal</label>
-                    <select id="animal">
-                        <option value="panda">Panda</option>
-                        <option value="hare">Hare</option>
-                        <option value="cat">Cat</option>
-                        <option value="tiger">Tiger</option>
-                    </select>
-
-                    <a href="#" id="next">NEXT</a>
                 </form>
-            </article>
+
+            <a href="#" id="next">NEXT</a>
         </section>
 
-        <section id="type-3">
-            <article>
+        <section id="type-3" class="hidden">
+            <header>
                 <h1>PLEASE FILL IN</h1>
+            </header>
 
                 <form>
                     <label for="nouns">1. Plural Noun:</label>
@@ -94,14 +97,14 @@
                     <label for="adj">5. Adjective</label>
                     <input type="text" id="adj" required>
 
-                    <a href="#" id="pgnext">NEXT</a>
                 </form>
-            </article>
+            <button id="pgnext">NEXT</button>
         </section>
 
-        <section id="type-4">
-            <article>
+        <section id="type-4" class="hidden">
+            <header>
                 <h1>PLEASE FILL IN</h1>
+            </header>
 
                 <form>
                     <label for="noun">6. Noun</label>
@@ -119,45 +122,40 @@
                     <label for="body">A Body Part</label>
                     <input type="text" id="body" required>
 
-                    <a href="#" id="finalpg">NEXT</a>
                 </form>
-            </article>
+            <button id="finalpg">GO TO STORY</button>    
         </section>
 
-        <section id="story-5">
-            <article>
-                <h1>The <span>(nouns)</span> of the <span>(spookyadj)</span></h1>
-            </article>
+        <section id="story-5" class="hidden">
+            <header>
+                <h1>The <span>(nouns)</span> of the (location)</span></h1>
 
-            <article>
-                <div>
-                    <img src="images/madlibs_comic.png" alt="rough sketch of comic, replace with final when done">
-
-                    <p class="d1">I'm not too (emotion) about this next story. My supervisors told me it was (difficulty level), even for them. Even worse, I'm stuck with my (adj) coworker too...</p>
-
-                    <p class="d2">UGH! <br>
-                    This place smells like (noun)!</p>
-
-                    <p class="d3">Hmm... I kinda like it. Reminds me of my (childhood location).</p>
-
-                    <p class="d4">We've been walking around for (#) hour(s) and still haven't found a single monster. I'm starting to think this was a fluke.</p>
-
-                    <p class="d5">(#) Hours Later</p>
-
-                    <p class="d6">Oh $#@%! Is that a (ocean animal)?!</p>
-
-                    <p>No, Looks more like a (ocean animal).</p>
-
-                    <p>I can't believe he lost his (body part)...</p>
-                </div>
-            </article>
-
-            <article>
                 <a href="#" id="return">Return to Start</a>
-            </article>
-        </section>
-    </main>
-    
-</body>
+            </header>
 
+            <div>
+                <img src="images/comicdone.png" alt="mablibs comic">
+
+                <p class="d1">I'm not too (emotion) about this next story. My supervisors told me it was (difficulty level), even for them. Even worse, I'm stuck with my (adj) coworker too...</p>
+
+                <p class="d2">UGH! <br>
+                This place smells like (noun)!</p>
+
+                <p class="d3">Hmm... I kinda like it. Reminds me of my (childhood location).</p>
+
+                <p class="d4">We've been walking around for (#) hour(s) and still haven't found a single monster. I'm starting to think this was a fluke.</p>
+
+                <p class="d5">(#) Hours Later</p>
+
+                <p class="d6">Oh $#@%! Is that a (ocean animal)?!</p>
+
+                <p class="d7">No, Looks more like a (ocean animal).</p>
+
+                <p class="d8">I can't believe he lost his (body part)...</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
 </html>
