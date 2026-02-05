@@ -1,0 +1,174 @@
+body {
+    background-image: url(images/madlibsbg.png);
+    /* background-color: rgb(203, 118, 118); */
+    background-repeat: no-repeat;
+    background-size: 1200px 750px;
+    /* position: relative; */
+}
+
+aside {
+    position: relative;
+    top: 530px;
+    left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li p {
+    color: #ffffff;
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(15, 14, 17, 0.77);
+}
+
+li {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-radius: 3px;
+    width: 150px;
+    height: 55px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+main {
+    position: relative;
+}
+
+section {
+    width: 650px;
+    height: 590px;
+    position: absolute;
+    margin-left: 274px;
+    top: -80px;
+}
+
+article {
+    margin-left: 65px;
+}
+
+h1 {
+    border-radius: 2px;
+    background: #D4F7FF;
+    box-shadow: 0 0 11.3px 4px rgba(212, 247, 255, 0.35);
+    color: #A70000;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+    width: 522px;
+    height: 45px;
+    margin: 0px;
+}
+
+#choose-2 form {
+    margin-top: 50px;
+    width: 301px;
+
+}
+
+#choose-2 label {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    font-style: normal;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+}
+
+#location, #animal {
+    background-color: #D4F7FF;
+    color: #A70000;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: normal;
+    width: 300px;
+}
+
+#next, #begin, #pgnext, #finalpg, #return {
+    border-radius: 2px;
+    background: #D4F7FF;
+    box-shadow: 0 0 11.3px 4px rgba(212, 247, 255, 0.35);
+    color: #A70000;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    font-style: normal;
+    text-align: center;
+    display: block;
+    width: 522px;
+    height: 45px;
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#type-3 label, #type-4 label {
+    color: #ffffff;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+#type-3 input, #type-4 input {
+    width: 400px;
+    height: 28px;
+}
+
+#type-3 input[type=text], #type-4 input[type=text] {
+    color: #A70000;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+}
+
+div {
+    margin-top: 50px;
+    width: 537px;
+    height: 400px;
+    background-color: #D4F7FF;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.d1 {
+    position: absolute;
+    top: 0px;
+    margin: 10px;
+    width: 300px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 600;
+    font-style: normal;
+    border-style: solid;
+}
+
+
+#welcome-1 { background-color: black; }
+#choose-2 { background-color: black; }
+#type-3 { background-color: black; }
+#type-4 { background-color: black; }
+#story-5 { background-color: black; z-index: 1;}
+
+/* #welcome-1 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); z-index: 1;}
+#choose-2 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); }
+#type-3 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); }
+#story-4 { background: radial-gradient(88.03% 88.03% at 50% 50%, rgba(56, 6, 6, 0.57) 0%, rgba(16, 14, 24, 0.57) 58.17%); } */
