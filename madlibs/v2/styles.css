@@ -69,7 +69,7 @@ header h1 {
     margin: 0px;
 }
 
-#next, #begin, #pgnext, #finalpg, #return {
+#next, #begin, #pgnext, #finalpg, #return, #sub {
     background: #D4F7FF;
     box-shadow: 0 0 11.3px 4px rgba(212, 247, 255, 0.35);
     color: #A70000;
