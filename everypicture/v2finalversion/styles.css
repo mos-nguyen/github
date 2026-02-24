@@ -1,0 +1,173 @@
+body {
+    background-color: #405c5c;
+    position: relative;
+}
+/* ---------------------------------- EXIT BUTTON ------------------------------------------------- */
+.exit {
+    position: absolute;
+    background-color: #d4eae5;
+    border-radius: 16px;
+    box-shadow: 0 3px 0 3px #738E88;
+    width: 154px;
+    text-align: center;
+    margin: 16px;
+}
+
+a { 
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif; 
+}
+
+.color {
+    font-size: 55px;
+    color: #BC2929;
+}
+
+.exit:hover {
+    box-shadow: 0 1px 0 1px #738E88;
+    translate: 2px;
+}
+
+.color:hover {
+    color: #ff1515;
+}
+
+/* ----------------------------------- OVERLAY ----------------------------------- */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.overlay article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background-color: #8d999f;
+    width: 860px;
+    height: 563px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #b9d1d4;
+}
+
+header {
+    background-color: #1C19CF;
+    margin: 10px;
+    display: flex;
+    border-style: inset;
+    border-color: #46448d;
+    border-width: 5px;
+    width: 821px;
+    height: 88px;
+    position: relative;
+}
+
+h1 {
+    margin: auto;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 64px;
+    color: #EBEBEB;
+    letter-spacing: 6px;
+}
+
+p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 32px;
+    color: #222222;
+    width: 500px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+button, .daicon {
+    background-color: #EBEBEB;
+    border-style: outset;
+    border-width: 3px;
+    border-color: #979c9c;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.close {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 30px);
+    font-size: 40px;
+}
+
+.daicon {
+    font-size: 35px;
+    position: absolute;
+    bottom: 50px;
+    right: 297px;
+    width: 250px;
+    text-align: center;
+    color: #222222;
+}
+
+.img {
+    margin-top: 115px;
+    margin-left: 15px;
+}
+
+#ol-sua p, #ol-demon p, #ol-robot p, #ol-angel p, #ol-pink p, #ol-ghost p {
+    color: #222222;
+    margin-left: 350px;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: showing;
+    opacity: 1;
+}
+
+/* ------------------------------------ IMAGES ----------------------------------------- */
+.container {
+    /* width: 1200px;
+    height: 750px; */
+    max-width: 917px;
+    aspect-ratio: 917 / 750;
+    position: relative;
+    margin: auto;
+    /* background-color: #1C19CF; */
+}
+
+img, svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#booth {
+    top: -5px;
+}
+
+#logo {
+   top: 530px;
+   left: 30px;
+}
+
+#ppl {
+    width: 470px;
+    top: 141px;
+    left: 230px;
+}
+
+svg {opacity: 0;}
+
+#logo:hover {
+    transform: scale(105%);
+}
+
