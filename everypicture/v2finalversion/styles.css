@@ -129,7 +129,7 @@ button, .daicon {
 }
 
 .showing {
-    visibility: showing;
+    visibility: visible;
     opacity: 1;
 }
 
