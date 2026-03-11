@@ -1,0 +1,216 @@
+body {
+    background-image: url(images/bgsmall.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#ol-start {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ol-start article {
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 65px;
+    border: 6px solid #D02337;
+    box-shadow: 0 2.591px 10.365px 9.069px rgba(0, 0, 0, 0.43);
+    margin: 35px;
+    height: 800px; 
+}
+
+header {
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+#logo {
+    transform: scale(60%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btn {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #7B000E;
+    box-shadow: 0 6.478px 0 0.648px #470008;
+}
+
+button {
+    color: white;
+    background-color: #D02337;
+    border-radius: 20px;
+    width: 280px;
+    height: 75px;
+    border: none;
+    box-shadow: 0 6.478px 0 0.648px #7B000E;
+    margin: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 32px;
+}
+
+/* BATTLE */
+#battle {
+    position: absolute;
+    top: 170px;
+    place-self: center;
+}
+
+#battle {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: auto;
+    max-width: 412px;
+}
+
+#player1, #player2, #choice {
+    background-color: #FFEDED;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #D02337;
+    border-style: solid;
+    border-color: #D02337;
+    box-shadow: -4.542px 0 1.627px -0.757px rgba(0, 0, 0, 0.25);
+    border-width: 3px;
+}
+
+#player1 {
+    border-radius: 7.569px 18.923px;
+    font-size: 12px;
+    height: 43px;
+    width: 130px;
+    gap: 30px;
+    margin: auto;
+    max-width: 412px;
+}
+
+#player2 {
+    border-radius: 7.631px 19.077px;
+    font-size: 12px;
+    height: 43px;
+    width: 130px;
+    gap: 30px;
+    margin: auto;
+    max-width: 412px;
+}
+
+#char1, #char2 {
+    margin-top: 10px;
+}
+ 
+p {
+    margin: 3px;
+    color: #D02337;
+}
+
+#hp {
+    display: flex;
+    place-self: center;
+}
+
+#p1healthbar div, #p2healthbar div {
+    width: 80px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #D02337;
+}
+
+/* CHOICE */
+
+#choice {
+    position: absolute;
+    place-self: center;
+    top: 440px;
+    margin: 20px;
+    height: 420px;
+    border-radius: 20px;
+}
+
+#choice button {
+    width: 150px;
+    height: 120px;
+    scale: 90%;
+    margin: 5px;
+}
+
+#quad {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+    place-self: center;
+}
+
+.narrate {
+    padding: 20px;
+    font-size: 20px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP VIEW ~~~~~~~~~~~~~~~~ */
+
+@media only screen and (min-width: 500px) {
+    body {
+        background-image: url(images/bgbig.png);
+        background-size: cover;
+    }
+
+    #ol-start article {
+        height: 650px; 
+        width: 530px;
+        place-self: center;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+    /* battle page */
+    #choice {
+        width: 1120px;
+        height: 200px;
+        top: 500px;
+    }
+
+    #battle, #player1, #player2 {
+        max-width: 1000px;
+    }
+
+    #player1, #player2 {
+        transform: scale(170%);
+    }
+
+    #battle {
+        gap: 500px;
+    }
+
+    #char1, #char2 {
+        transform: scale(165%);
+    }
+
+    #choice button {
+        width: 230px;
+        height: 80px;
+    }
+
+    #quad {
+        place-self: end;
+    }
+
+    .narrate {
+        font-size: 36px;
+        max-width: 580px;
+    }
+}
