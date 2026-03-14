@@ -28,7 +28,7 @@
     const messages = document.querySelector('#messages');
     const attack = document.querySelector('#attack');
     const heal = document.querySelector('#heal');
-    const special = document.querySelector('#special');
+    // const special = document.querySelector('#special');
 
     let attacker;
     let defender;
@@ -37,9 +37,9 @@
     const gameData = {
         players: ['player1', 'player2'],
         health: [100, 100],
-        attack: [40, 50],
-        heal: [20, 30],
-        special: [0, 0, 100, 0],
+        attack: [30, 35],
+        heal: [10, 20],
+        // special: [0, 0, 100, 0],
         attackMessage: [
             'got a hit in! 40 points of damage!',
             'got a super strong hit, 50 points of damage!'
@@ -56,7 +56,7 @@
         // ],
         defendMessage: [
             'Ouch! that hurt!',
-            'AH WHAT THE FUCK?! THAT REALLY HURT'
+            'OW! That really hurt!'
         ],
         index: 0
     };
