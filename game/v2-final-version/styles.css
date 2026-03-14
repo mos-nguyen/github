@@ -179,13 +179,13 @@ p {
 }
 
 /* --------------------------- */
-#char2 {
+/* #char2 {
     filter: brightness(50%);
-}
+} */
 
-#player2 {
+/* #player2 {
     filter: brightness(50%);
-}
+} */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DESKTOP VIEW ~~~~~~~~~~~~~~~~ */
 
@@ -217,6 +217,16 @@ p {
 
     #player1, #player2 {
         transform: scale(170%);
+    }
+
+    #player1, #player2 {
+        position: absolute;
+        top: -80px;
+    }
+
+    #char1, #char2 {
+        position: absolute;
+        top: 80px;
     }
 
     #battle {
