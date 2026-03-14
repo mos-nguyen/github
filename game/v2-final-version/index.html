@@ -16,13 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
     <!-- font-family: "Rancho", cursive; -->
 
-
     <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-
     <section id="ol-start" >
         <article>
             <header>
@@ -31,9 +29,12 @@
 
             <div id="btn">
                 <button class="play">Let's Play!</button>
-                <button>Rules</button>
-                <button>Settings</button>
-                <button>Portal</button>
+                <!-- <button>Rules</button>
+                <button>Settings</button> -->
+                <a href="../../index.html">
+                    <button class="portal">Portal</button>
+                </a>
+                
             </div>
         </article>
     </section>
@@ -45,10 +46,10 @@
         <!-- ---------------Player 1---------------------- -->
             <div>
                 <div id="player1">
-                    <p id="name1">Player 1</p>
+                    <p>Player 1</p>
 
-                    <div id="hp">
-                        <div id="p1healthbar"><div></div></div><p id="p1health0">100 HP</p>
+                    <div class="health">
+                        <div id="healthbar0"><div></div></div><p id="playerhealth0">100%</p>
                     </div>
                 </div>
 
@@ -58,11 +59,10 @@
 <!-- ---------------Player 2---------------------- -->
             <div>
                 <div id="player2">
-        
-                <p class="name1">Player 2</p>
+                    <p>Player 2</p>
 
-                    <div id="hp">
-                        <div id="p2healthbar"><div></div></div><p id="p2health0">100 HP</p>
+                    <div class="health">
+                        <div id="healthbar1"><div></div></div><p id="playerhealth1">100%</p>
                     </div>
                 </div>
 
@@ -71,14 +71,14 @@
         </section>
 <!-- ---------------PLAYERS CHOICES---------------------- -->
         <section id="choice">
-            <div id="narrator">
+            <div id="messages">
                 <p class="narrate">Player 1 is up! What will your character do?</p>
             </div>
             
             <div id="quad">
                 <button id="attack">Attack</button>
                 <button id="heal">Heal</button>
-                <button id="special">Special Attack</button>
+                <!-- <button id="special">Special Attack</button> -->
                 <button id="giveup">Give Up</button>
             </div>
 

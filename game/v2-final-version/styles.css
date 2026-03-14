@@ -117,16 +117,27 @@ p {
     color: #D02337;
 }
 
-#hp {
+.health {
     display: flex;
     place-self: center;
 }
 
-#p1healthbar div, #p2healthbar div {
-    width: 80px;
+#healthbar0, #healthbar1 {
+    width: 90px;
     height: 15px;
     border-radius: 20px;
-    background-color: #D02337;
+    background-color: #929292;
+    position: relative;
+    overflow: hidden;
+}
+
+#healthbar0 div, #healthbar1 div{
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#D02337; 
 }
 
 /* CHOICE */
@@ -138,6 +149,7 @@ p {
     margin: 20px;
     height: 420px;
     border-radius: 20px;
+    width: 350px;
 }
 
 #choice button {
@@ -153,6 +165,11 @@ p {
     position: absolute;
     bottom: 0px;
     margin: 10px;
+    place-self: center;
+}
+
+#reset {
+    display: grid;
     place-self: center;
 }
 
