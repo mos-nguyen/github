@@ -45,12 +45,19 @@ header {
     margin-top: 20px;
 }
 
-button:hover {
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover, a {
     background-color: #7B000E;
     box-shadow: 0 6.478px 0 0.648px #470008;
 }
 
-button {
+button, a {
     color: white;
     background-color: #D02337;
     border-radius: 20px;
